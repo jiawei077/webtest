@@ -1,0 +1,37 @@
+#about_content {
+  position: relative;
+}
+.small_container {
+  position: relative;
+  width: 50%;
+  display: block;
+  margin: 80px auto 60px;
+}
+
+#about_content .content {
+  text-align: left;
+}
+
+.bottom-icon {
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.bottom-icon.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .small_container {
+    width: 80%;
+    margin: 30px auto 50px auto;
+  }
+
+  .bottom-icon.computer {
+    display: none;
+  }
+
+  .bottom-icon.mobile {
+    display: block;
+  }
+}

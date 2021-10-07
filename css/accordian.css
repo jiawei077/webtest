@@ -1,0 +1,110 @@
+#accordian_section {
+  position: relative;
+  display: block;
+  padding: 50px 0 30px 0;
+}
+
+#accordian_section .container {
+  width: 70%;
+}
+
+.accordian .unstyled-list li {
+  padding: 0;
+  position: relative;
+  border: 1px solid #58595b;
+}
+
+.accordian .unstyled-list li span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  width: 70%;
+  padding-bottom: 5px;
+  color: var(--bs-primary);
+}
+
+.accordian .unstyled-list li:before {
+  display: none;
+}
+
+.accordian .unstyled-list li .question {
+  position: relative;
+  background: #f3f3f3;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.accordian .unstyled-list li .question:after {
+  content: "";
+  position: absolute;
+  background: #252932;
+  width: 2px;
+  border-radius: 15px;
+  height: 55px;
+  right: 52px;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.accordian .unstyled-list li .question:before {
+  content: "";
+  position: absolute;
+  background: #252932;
+  width: 55px;
+  border-radius: 15px;
+  height: 2px;
+  right: 26px;
+  left: auto;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.accordian .unstyled-list li h4 {
+  color: #424b5a;
+  width: 70%;
+}
+
+.accordian li .answer {
+  max-height: 0;
+  padding: 80px 150px;
+  margin: auto;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.accordian li.open .answer {
+  max-height: 100%;
+  display: block;
+}
+
+.accordian .unstyled-list li.open .question:after {
+  display: none;
+}
+@media (max-width: 991px) {
+  .accordian li .answer {
+    padding: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #accordian_section .container {
+    width: 95%;
+  }
+  .accordian .unstyled-list li .question {
+    padding: 20px;
+  }
+  .accordian li.open .answer {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,354 @@
+footer {
+  background: #252932;
+}
+
+#footer_cta {
+  border-bottom: solid 1px var(--bs-body-bg);
+}
+
+.footer_info .wrapper {
+  display: flex;
+  width: 91%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.footer_info .wrapper .left_cta {
+  width: 70%;
+  flex-basis: 70%;
+}
+
+.footer_info .wrapper .left_cta p {
+  width: 80%;
+}
+
+.footer_info .wrapper .right_cta {
+  width: 30%;
+  flex-basis: 30%;
+}
+
+#footer_cta .wrapper .right_cta .contacts {
+  margin-bottom: 20px;
+}
+
+#footer_cta .wrapper .right_cta p {
+  font-size: 16px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+#footer_cta .wrapper .right_cta p.bold {
+  font-weight: 700;
+}
+
+#footer_cta .wrapper p {
+  color: var(--bs-body-bg);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+#footer_cta .wrapper .footer_links {
+  display: flex;
+  flex-flow: column;
+}
+
+#footer_cta .wrapper .footer_links a {
+  color: var(--bs-body-bg);
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  width: fit-content;
+  text-decoration: none;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#footer_cta .wrapper .footer_links a:hover {
+  color: var(--bs-red);
+}
+
+#footer_forms h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: var(--bs-body-bg);
+}
+
+#footer_forms .left_cta p {
+  width: 45%;
+  color: var(--bs-body-bg);
+}
+
+#subscribe_form {
+  padding: 15px 0;
+  width: 80%;
+}
+
+#subscribe_form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#subscribe_form input {
+  margin-bottom: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  font-style: italic;
+  color: var(-bs-body-bg);
+  padding: 6px 16px;
+  border-bottom: solid 2px var(--bs-body-bg);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#subscribe_form input:focus {
+  opacity: 0.6;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#subscribe_form input:active {
+  border: none;
+  border-bottom: solid 2px var(--bs-body-bg);
+  -webkit-appearance: none;
+}
+
+#subscribe_form .tnc {
+  color: var(--bs-body-bg);
+}
+
+.full_width {
+  grid-column: span 2;
+}
+
+#subscribe_form input[type="text"] {
+  display: block;
+  padding: 6px 16px;
+  width: 100%;
+  font-weight: 300;
+  color: var(--bs-body-bg);
+}
+
+#subscribe_form .tnc {
+  display: flex;
+}
+
+#subscribe_form label {
+  color: var(--bs-body-bg);
+  font-size: 10px;
+  letter-spacing: 0.15px;
+  width: 100%;
+  padding-left: 50px;
+  position: relative;
+}
+
+#subscribe_form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--bs-body-bg);
+  opacity: 1; /* Firefox */
+}
+
+#subscribe_form input::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--bs-body-bg);
+}
+
+#subscribe_form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--bs-body-bg);
+}
+
+#subscribe_form button {
+  display: inline-block;
+  max-width: fit-content;
+  background: transparent;
+  padding: 10px 30px;
+  max-height: 50px;
+  text-transform: uppercase;
+  color: var(--bs-body-bg);
+  text-decoration: none;
+  border: solid 1px var(--bs-body-bg);
+  border-radius: 5px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#subscribe_form button:hover {
+  background: var(--bs-body-bg);
+  color: #252932;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: solid 2px var(--bs-body-bg);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: var(--bs-body-bg);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--bs-primary);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--bs-body-bg);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#subscribe_form .flexbox {
+  width: 75%;
+}
+
+.twitter_feed .name_tag span {
+  display: block;
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.twitter_feed .name_tag span.tag {
+  color: var(--bs-red);
+}
+
+.twitter_feed p {
+  font-size: 12px;
+  margin-top: 15px;
+  color: var(--bs-body-bg);
+}
+
+#copyright .flexbox {
+  width: 100%;
+}
+
+#copyright span {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#copyright ul {
+  margin: 0;
+}
+
+#copyright ul li {
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+#copyright ul li a {
+  color: var(--bs-body-bg);
+  text-decoration: none;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#copyright ul li a:hover {
+  color: var(--bs-red);
+}
+
+#copyright ul li:before {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #subscribe_form .flexbox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer_info .wrapper {
+    flex-direction: column;
+    width: 95%;
+    padding: 30px 0;
+  }
+  #footer_forms .left_cta p,
+  #subscribe_form {
+    width: 100%;
+  }
+  .footer_info .wrapper .left_cta,
+  .footer_info .wrapper .right_cta {
+    width: 100%;
+
+    flex-basis: 100%;
+  }
+  .footer_info .wrapper .right_cta {
+    margin-top: 30px;
+  }
+  #footer_cta .wrapper p {
+    width: 100%;
+    font-size: 20px;
+  }
+  #subscribe_form input {
+    grid-column: span 2;
+  }
+  #subscribe_form .flexbox {
+    width: 100%;
+    flex-direction: column;
+  }
+  .full_mobile {
+    flex-direction: column;
+  }
+  .full_mobile button,
+  #copyright.footer_info .wrapper .left_cta {
+    margin-top: 20px;
+  }
+  #copyright ul li a {
+    font-size: 25px;
+  }
+  .social_media .flexbox {
+    justify-content: space-between;
+  }
+  #copyright.footer_info .wrapper {
+    flex-direction: column-reverse;
+  }
+}
